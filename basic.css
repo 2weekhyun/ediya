@@ -25,7 +25,12 @@ body, nav, div, section {
 
 .top_fixed {
   position: fixed;
+  height: 120px;
 }
+
+
+
+/* .main_beanist .bx-wrapper .bx-pager{bottom:-90px;} */
 
 header {
   height: 170px;
@@ -42,6 +47,16 @@ header {
   position: relative;
   height: 50px;
   background: #243c84;
+}
+
+.top_fixed .global_menu {
+  display: none;
+}
+
+
+
+.top_fixed .top_align {
+  background: #FFF;
 }
 
 header .global_menu {
@@ -270,6 +285,10 @@ img {
   float: left;
 }
 
+.top_fixed .main {
+    top: 75px;
+}
+
 .gnb .main li {
   background: none;
   float: left;
@@ -400,7 +419,7 @@ img {
   color: #000;
 }
 
-.bx-wrapper {
+/* .bx-wrapper {
   position: relative;
   margin-bottom: 0px;
   padding: 0;
@@ -408,11 +427,11 @@ img {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   margin: 0 auto;
-}
+} */
 
-.bx-viewport {
+/* .bx-viewport {
   -webkit-transform: translatez(0);
-}
+} */
 
 .main_visual .visual_img {
   overflow: hidden;
@@ -518,13 +537,15 @@ img {
 } */
 
 .main_beanist {
-  padding: 112px 0 80px;
-}
-
-.main_beanist {
   padding: 60px 0;
   background: url(img/main_beanist_bg.gif) #fce1a6 center no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 1180px){
+.main_beanist {
+    padding: 112px 0 80px;
+}
 }
 
 .main_beanist h2 {
@@ -613,14 +634,6 @@ em {
   width: 100%;
 }
 
-.main_beanist .bx-wrapper .bx-pager {
-  bottom: -110px;
-}
-
-.bx-wrapper .bx-pager-item {
-  font-size: 0;
-  line-height: 0;
-}
 
 .main_beanist .beanist_slide ul li dl {
   margin-top: 20px;
@@ -648,6 +661,16 @@ em {
 .main_beanist .bx-wrapper .bx-pager.bx-default-pager a:hover, .main_beanist .bx-wrapper .bx-pager.bx-default-pager a.active, .main_beanist .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #90470c !important;
 }
+
+/* .main_beanist .bx-wrapper .bx-pager {
+  bottom: -90px;
+}
+
+@media screen and (min-width: 1180px){
+  .main_beanist .bx-wrapper .bx-pager {
+      bottom: -110px;
+  }
+  } */
 
 .dream_factory {
   width: 100%;
@@ -1652,3 +1675,14 @@ table {
   text-align: center;
   font-size: 16px;
 }
+
+/* 1180px 이상 해상도 */ /* main - 비니스트 배너 */
+/* @media screen and (min-width:1180px){
+  .main_beanist{padding:112px 0 80px;}
+  .main_beanist .beanist_slide ul.ame{max-width:900px; margin:auto;}
+  .main_beanist .beanist_slide ul.latte{max-width:1295px; margin:auto;}
+  .main_beanist .beanist_slide ul.mix{max-width:900px; margin:auto;}
+  .main_beanist .beanist_slide ul li .pro_img{max-width:217px;}
+  .main_beanist .beanist_slide ul.latte li .pro_img{max-width:259px; padding-top:0;}
+  .main_beanist .beanist_slide ul li dt span.block{display:inline-block;}
+  .main_beanist .bx-wrapper .bx-pager{bottom:-110px;}} */
