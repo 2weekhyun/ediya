@@ -155,7 +155,7 @@ header h2.nav_btn a {
 
 .gnb .top_members {
   float: left;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .gnb .top_members li:first-child {
@@ -166,8 +166,8 @@ header h2.nav_btn a {
 
 .gnb .top_members li {
   float: left;
-  margin-left: 6px;
-  padding-left: 6px;
+  margin-left: 4px;
+  padding-left: 4px;
   background: url(img/util_line_m.gif) no-repeat left;
 }
 
